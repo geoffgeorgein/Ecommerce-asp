@@ -1,0 +1,508 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB3E47A0-D5D7-4673-9968-5CD44880CA93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ecommerce2</RootNamespace>
+    <AssemblyName>Ecommerce2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Add_product.aspx" />
+    <Content Include="Admin\AdForm.aspx" />
+    <Content Include="Admin\css\animate.min.css" />
+    <Content Include="Admin\css\bootstrap-grid.css" />
+    <Content Include="Admin\css\bootstrap-grid.min.css" />
+    <Content Include="Admin\css\bootstrap-reboot.css" />
+    <Content Include="Admin\css\bootstrap-reboot.min.css" />
+    <Content Include="Admin\css\bootstrap.css" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\default-skin.css" />
+    <Content Include="Admin\css\font-awesome.min.css" />
+    <Content Include="Admin\css\icomoon.css" />
+    <Content Include="Admin\css\jquery-ui.css" />
+    <Content Include="Admin\css\jquery.fancybox.min.css" />
+    <Content Include="Admin\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Admin\css\meanmenu.css" />
+    <Content Include="Admin\css\nice-select.css" />
+    <Content Include="Admin\css\normalize.css" />
+    <Content Include="Admin\css\owl.carousel.min.css" />
+    <Content Include="Admin\css\responsive.css" />
+    <Content Include="Admin\css\slick.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\Edit_Category.aspx" />
+    <Content Include="Admin\Edit_Product.aspx" />
+    <Content Include="Admin\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\Home.aspx" />
+    <Content Include="Admin\images\about.jpg" />
+    <Content Include="Admin\images\banner.jpg" />
+    <Content Include="Admin\images\bg.jpg" />
+    <Content Include="Admin\images\contact_g.jpg" />
+    <Content Include="Admin\images\cos.png" />
+    <Content Include="Admin\images\cross.png" />
+    <Content Include="Admin\images\footer.jpg" />
+    <Content Include="Admin\images\leptop.jpg" />
+    <Content Include="Admin\images\loading.gif" />
+    <Content Include="Admin\images\logo.png" />
+    <Content Include="Admin\images\logo1.png" />
+    <Content Include="Admin\images\menu_icon.png" />
+    <Content Include="Admin\images\pc.png" />
+    <Content Include="Admin\images\pct.png" />
+    <Content Include="Admin\images\product1.png" />
+    <Content Include="Admin\images\product2.png" />
+    <Content Include="Admin\images\product3.png" />
+    <Content Include="Admin\images\product4.png" />
+    <Content Include="Admin\images\product5.png" />
+    <Content Include="Admin\images\product6.png" />
+    <Content Include="Admin\images\product7.png" />
+    <Content Include="Admin\images\product8.png" />
+    <Content Include="Admin\images\product9.png" />
+    <Content Include="Admin\images\thr.png" />
+    <Content Include="Admin\images\thr1.png" />
+    <Content Include="Admin\images\thr2.png" />
+    <Content Include="Admin\js\bootstrap.bundle.js" />
+    <Content Include="Admin\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin\js\bootstrap.js" />
+    <Content Include="Admin\js\bootstrap.min.js" />
+    <Content Include="Admin\js\custom.js" />
+    <Content Include="Admin\js\jquery-3.0.0.min.js" />
+    <Content Include="Admin\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\jquery.validate.js" />
+    <Content Include="Admin\js\modernizer.js" />
+    <Content Include="Admin\js\plugin.js" />
+    <Content Include="Admin\js\popper.min.js" />
+    <Content Include="Admin\js\revolution\assets\coloredbg.png" />
+    <Content Include="Admin\js\revolution\assets\gridtile.png" />
+    <Content Include="Admin\js\revolution\assets\gridtile_3x3.png" />
+    <Content Include="Admin\js\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="Admin\js\revolution\assets\gridtile_white.png" />
+    <Content Include="Admin\js\revolution\assets\loader.gif" />
+    <Content Include="Admin\js\revolution\css\closedhand.html" />
+    <Content Include="Admin\js\revolution\css\layers.css" />
+    <Content Include="Admin\js\revolution\css\navigation.css" />
+    <Content Include="Admin\js\revolution\css\openhand.html" />
+    <Content Include="Admin\js\revolution\css\settings.css" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="Admin\js\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="Admin\js\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="Admin\js\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Admin\js\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Admin\js\slider-setting.js" />
+    <Content Include="Admin\LogIn.aspx" />
+    <Content Include="User\about.html" />
+    <Content Include="User\AddToCart.aspx" />
+    <Content Include="User\computer.html" />
+    <Content Include="User\contact.html" />
+    <Content Include="User\css\animate.min.css" />
+    <Content Include="User\css\bootstrap-grid.css" />
+    <Content Include="User\css\bootstrap-grid.min.css" />
+    <Content Include="User\css\bootstrap-reboot.css" />
+    <Content Include="User\css\bootstrap-reboot.min.css" />
+    <Content Include="User\css\bootstrap.css" />
+    <Content Include="User\css\bootstrap.min.css" />
+    <Content Include="User\css\default-skin.css" />
+    <Content Include="User\css\font-awesome.min.css" />
+    <Content Include="User\css\icomoon.css" />
+    <Content Include="User\css\jquery-ui.css" />
+    <Content Include="User\css\jquery.fancybox.min.css" />
+    <Content Include="User\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="User\css\meanmenu.css" />
+    <Content Include="User\css\nice-select.css" />
+    <Content Include="User\css\normalize.css" />
+    <Content Include="User\css\owl.carousel.min.css" />
+    <Content Include="User\css\responsive.css" />
+    <Content Include="User\css\slick.css" />
+    <Content Include="User\css\style.css" />
+    <Content Include="User\fonts\fontawesome-webfont.svg" />
+    <Content Include="User\Home.aspx" />
+    <Content Include="User\images\about.jpg" />
+    <Content Include="User\images\banner.jpg" />
+    <Content Include="User\images\bg.jpg" />
+    <Content Include="User\images\contact_g.jpg" />
+    <Content Include="User\images\cos.png" />
+    <Content Include="User\images\cross.png" />
+    <Content Include="User\images\footer.jpg" />
+    <Content Include="User\images\images_cart.png" />
+    <Content Include="User\images\leptop.jpg" />
+    <Content Include="User\images\loading.gif" />
+    <Content Include="User\images\logo.png" />
+    <Content Include="User\images\logo1.png" />
+    <Content Include="User\images\menu_icon.png" />
+    <Content Include="User\images\pc.png" />
+    <Content Include="User\images\pct.png" />
+    <Content Include="User\images\product1.png" />
+    <Content Include="User\images\product2.png" />
+    <Content Include="User\images\product3.png" />
+    <Content Include="User\images\product4.png" />
+    <Content Include="User\images\product5.png" />
+    <Content Include="User\images\product6.png" />
+    <Content Include="User\images\product7.png" />
+    <Content Include="User\images\product8.png" />
+    <Content Include="User\images\product9.png" />
+    <Content Include="User\images\thr.png" />
+    <Content Include="User\images\thr1.png" />
+    <Content Include="User\images\thr2.png" />
+    <Content Include="User\index.html" />
+    <Content Include="User\js\bootstrap.bundle.js" />
+    <Content Include="User\js\bootstrap.bundle.min.js" />
+    <Content Include="User\js\bootstrap.js" />
+    <Content Include="User\js\bootstrap.min.js" />
+    <Content Include="User\js\custom.js" />
+    <Content Include="User\js\jquery-3.0.0.min.js" />
+    <Content Include="User\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="User\js\jquery.min.js" />
+    <Content Include="User\js\jquery.validate.js" />
+    <Content Include="User\js\modernizer.js" />
+    <Content Include="User\js\plugin.js" />
+    <Content Include="User\js\popper.min.js" />
+    <Content Include="User\js\revolution\assets\coloredbg.png" />
+    <Content Include="User\js\revolution\assets\gridtile.png" />
+    <Content Include="User\js\revolution\assets\gridtile_3x3.png" />
+    <Content Include="User\js\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="User\js\revolution\assets\gridtile_white.png" />
+    <Content Include="User\js\revolution\assets\loader.gif" />
+    <Content Include="User\js\revolution\css\closedhand.html" />
+    <Content Include="User\js\revolution\css\layers.css" />
+    <Content Include="User\js\revolution\css\navigation.css" />
+    <Content Include="User\js\revolution\css\openhand.html" />
+    <Content Include="User\js\revolution\css\settings.css" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="User\js\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="User\js\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="User\js\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="User\js\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="User\js\slider-setting.js" />
+    <Content Include="User\laptop.html" />
+    <Content Include="User\LogIn.aspx" />
+    <Content Include="User\Order.aspx" />
+    <Content Include="User\PDetails.aspx" />
+    <Content Include="User\product.html" />
+    <Content Include="User\WebForm1.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Add_product.aspx.cs">
+      <DependentUpon>Add_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add_product.aspx.designer.cs">
+      <DependentUpon>Add_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdForm.aspx.cs">
+      <DependentUpon>AdForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdForm.aspx.designer.cs">
+      <DependentUpon>AdForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Edit_Category.aspx.cs">
+      <DependentUpon>Edit_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Edit_Category.aspx.designer.cs">
+      <DependentUpon>Edit_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Edit_Product.aspx.cs">
+      <DependentUpon>Edit_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Edit_Product.aspx.designer.cs">
+      <DependentUpon>Edit_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConCls.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PDetails.aspx.cs">
+      <DependentUpon>PDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PDetails.aspx.designer.cs">
+      <DependentUpon>PDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User1.Master.cs">
+      <DependentUpon>User1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User1.Master.designer.cs">
+      <DependentUpon>User1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\css\.DS_Store" />
+    <Content Include="User\css\bootstrap-grid.css.map" />
+    <Content Include="User\css\bootstrap-grid.min.css.map" />
+    <Content Include="User\css\bootstrap-reboot.css.map" />
+    <Content Include="User\css\bootstrap-reboot.min.css.map" />
+    <Content Include="User\css\bootstrap.css.map" />
+    <Content Include="User\css\bootstrap.min.css.map" />
+    <Content Include="User\fonts\fontawesome-webfont.eot" />
+    <Content Include="User\fonts\fontawesome-webfont.ttf" />
+    <Content Include="User\fonts\fontawesome-webfont.woff" />
+    <Content Include="User\fonts\fontawesome-webfont.woff2" />
+    <Content Include="User\fonts\FontAwesome.otf" />
+    <Content Include="User\fonts\IcoMoon-Free.ttf" />
+    <Content Include="User\fonts\Poppins-Black.ttf" />
+    <Content Include="User\fonts\Poppins-BlackItalic.ttf" />
+    <Content Include="User\fonts\Poppins-Bold.ttf" />
+    <Content Include="User\fonts\Poppins-BoldItalic.ttf" />
+    <Content Include="User\fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="User\fonts\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="User\fonts\Poppins-ExtraLight.ttf" />
+    <Content Include="User\fonts\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="User\fonts\Poppins-Italic.ttf" />
+    <Content Include="User\fonts\Poppins-Light.ttf" />
+    <Content Include="User\fonts\Poppins-LightItalic.ttf" />
+    <Content Include="User\fonts\Poppins-Medium.ttf" />
+    <Content Include="User\fonts\Poppins-MediumItalic.ttf" />
+    <Content Include="User\fonts\Poppins-Regular.ttf" />
+    <Content Include="User\fonts\Poppins-SemiBold.ttf" />
+    <Content Include="User\fonts\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="User\fonts\Poppins-Thin.ttf" />
+    <Content Include="User\fonts\Poppins-ThinItalic.ttf" />
+    <Content Include="User\images\.DS_Store" />
+    <Content Include="User\js\.DS_Store" />
+    <Content Include="User\js\bootstrap.bundle.js.map" />
+    <Content Include="User\js\bootstrap.bundle.min.js.map" />
+    <Content Include="User\js\bootstrap.js.map" />
+    <Content Include="User\js\bootstrap.min.js.map" />
+    <Content Include="User\js\revolution\.DS_Store" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="User\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="User\js\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="User\js\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="User\js\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="User\js\revolution\js\.DS_Store" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\images\.DS_Store" />
+    <Content Include="Admin\js\.DS_Store" />
+    <Content Include="Admin\js\bootstrap.bundle.js.map" />
+    <Content Include="Admin\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Admin\js\bootstrap.js.map" />
+    <Content Include="Admin\js\bootstrap.min.js.map" />
+    <Content Include="Admin\js\revolution\.DS_Store" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="Admin\js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="Admin\js\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="Admin\js\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="Admin\js\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Admin\js\revolution\js\.DS_Store" />
+    <Content Include="Admin\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\fonts\FontAwesome.otf" />
+    <Content Include="Admin\fonts\IcoMoon-Free.ttf" />
+    <Content Include="Admin\fonts\Poppins-Black.ttf" />
+    <Content Include="Admin\fonts\Poppins-BlackItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Bold.ttf" />
+    <Content Include="Admin\fonts\Poppins-BoldItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="Admin\fonts\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-ExtraLight.ttf" />
+    <Content Include="Admin\fonts\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Italic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Light.ttf" />
+    <Content Include="Admin\fonts\Poppins-LightItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Medium.ttf" />
+    <Content Include="Admin\fonts\Poppins-MediumItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Regular.ttf" />
+    <Content Include="Admin\fonts\Poppins-SemiBold.ttf" />
+    <Content Include="Admin\fonts\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Admin\fonts\Poppins-Thin.ttf" />
+    <Content Include="Admin\fonts\Poppins-ThinItalic.ttf" />
+    <Content Include="Admin\css\.DS_Store" />
+    <Content Include="Admin\css\bootstrap-grid.css.map" />
+    <Content Include="Admin\css\bootstrap-grid.min.css.map" />
+    <Content Include="Admin\css\bootstrap-reboot.css.map" />
+    <Content Include="Admin\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Admin\css\bootstrap.css.map" />
+    <Content Include="Admin\css\bootstrap.min.css.map" />
+    <None Include="packages.config" />
+    <Content Include="User\User1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\icon\" />
+    <Folder Include="User\icon\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52363</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
