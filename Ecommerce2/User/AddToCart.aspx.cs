@@ -26,6 +26,11 @@ namespace Ecommerce2.User
             dt.Columns.Add("ptotalprice");
             DataRow dr;
 
+      
+            
+             //Session["Total_Price"] = 0;
+            
+
           
                 
 
@@ -70,6 +75,8 @@ namespace Ecommerce2.User
                         int TotalPrice = price * 2;
                         dr["ptotalprice"] = TotalPrice;
 
+                        Session["Total_Price"] = TotalPrice;
+
 
                         dt.Rows.Add(dr);
 
@@ -110,6 +117,11 @@ namespace Ecommerce2.User
 
                         int TotalPrice = price * 2;
                         dr["ptotalprice"] = TotalPrice;
+
+                        if (TotalPrice > 0)
+                        {
+                            Session["Total_Price"] = TotalPrice;
+                        }
 
 
                         dt.Rows.Add(dr);

@@ -30,6 +30,9 @@
         .auto-style8 {
             height: 28px;
         }
+        .auto-style9 {
+            color: #222222;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -46,7 +49,9 @@
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style9">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/User/Home.aspx">Previous Page</asp:HyperLink>
+            </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
